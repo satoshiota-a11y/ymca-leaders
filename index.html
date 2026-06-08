@@ -314,7 +314,7 @@
   .cc-head{text-align:center;margin-bottom:32px;}
   .contact-card h3{color:#fff;font-size:24px;margin-bottom:6px;}
   .cc-sub{color:rgba(255,255,255,.7);font-size:14px;font-weight:500;}
-  .cc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .cc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:760px;margin:0 auto;}
   .cc-item{
     display:flex;flex-direction:column;gap:8px;
     background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);
@@ -357,6 +357,12 @@
     .gal{grid-template-columns:1fr;grid-auto-rows:200px;}
     .gal .wide{grid-column:auto;}
     .gal .tall{grid-row:auto;}
+    /* スマホでは中央寄せの見出し・本文を左寄せに */
+    .center{text-align:left !important;}
+    .center .eyebrow,.center .eyebrow[style]{justify-content:flex-start !important;}
+    .center .sec-lead{margin-left:0 !important;margin-right:0 !important;}
+    .cta-band{text-align:left !important;}
+    .cta-actions{justify-content:flex-start !important;}
   }
   .editor-note{display:none;}
 </style>
@@ -724,8 +730,7 @@
       <h2>この夏、子どもたちと一緒に<br><span class="mark">最高の数日間</span>をつくりませんか？</h2>
       <p>応募も、相談も、まずは一歩から。あなたからの連絡を、心からお待ちしています。</p>
       <div class="cta-actions">
-        <a class="btn btn-red" href="/cdn-cgi/l/email-protection#3c485357534e53465d4b5d7c4f5d55485d515d45515f5d12534e5b034f495e56595f4801dfbfa0dfbf95dfbf8fdfbfbadfbe9fdfbe9edfbf96dfbf80dfbfbcdfbf80d983a0d9b7a3dfbf87d9a9b3dfbdb8d9acb4dfbeb3dfbda7">メールで応募・相談する</a>
-        <a class="btn btn-ghost" href="tel:0429395051">📞 04-2939-5051</a>
+        <a class="btn btn-red" href="/cdn-cgi/l/email-protection#9aeef5f1f5e8f5e0fbedfbdae9fbf3eefbf7fbe3f7f9fbb4f5e8fda5e9eff8f0fff9eea779190679193379192979191c79183979183879193079192679191a7919267f25067f11057919217f0f15791b1e7f0a12791815791b01">メールで応募・相談する</a>
       </div>
     </div>
 
@@ -735,19 +740,16 @@
         <p class="cc-sub">担当：福田（ふくだ）・桜井（さくらい）</p>
       </div>
       <div class="cc-grid">
-        <a class="cc-item" href="/cdn-cgi/l/email-protection#f783989c9885988d968096b784969e83969a968e9a9496d9988590c88482959d929483ca14746b14745e14744414747114755414755514745d14744b14747714744b12486b127c6814744c12627814767312677f14757814766c">
+        <a class="cc-item" href="/cdn-cgi/l/email-protection#baced5d1d5c8d5c0dbcddbfac9dbd3cedbd7dbc3d7d9db94d5c8dd85c9cfd8d0dfd9ce8759392659391359390959393c59381959381859391059390659393a5939065f05265f31255939015f2f35593b3e5f2a32593835593b21">
           <span class="cc-label">✉ Mail</span>
-          <span class="cc-value"><span class="__cf_email__" data-cfemail="295d4642465b4653485e48695a48405d48444850444a4807465b4e">[email&#160;protected]</span></span>
+          <span class="cc-value"><span class="__cf_email__" data-cfemail="2f5b4044405d40554e584e6f5c4e465b4e424e56424c4e01405d48">[email&#160;protected]</span></span>
           <span class="cc-note">24時間受付・お気軽にどうぞ</span>
-        </a>
-        <a class="cc-item" href="tel:0429395051">
-          <span class="cc-label">☎ Tel</span>
-          <span class="cc-value">04-2939-5051</span>
-          <span class="cc-note">平日 10:00〜18:00</span>
         </a>
         <div class="cc-item">
           <span class="cc-label">📍 Access</span>
-          <span class="cc-value">〒359-1141<br>埼玉県所沢市小手指町1-39-2</span>
+          <span class="cc-value">〒359-1141
+埼玉県所沢市小手指町1-39-2
+Tel 04-2939-5051</span>
           <span class="cc-note">西武池袋線「小手指駅」北口から徒歩7分</span>
         </div>
       </div>
